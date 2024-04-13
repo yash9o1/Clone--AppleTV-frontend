@@ -1,0 +1,646 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+body {
+    background-color: #2d2d2d;
+    color: white;
+    overflow-x: hidden;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.background img {
+    width: 100%;
+    height: 100%;
+    background-size: max(1500px, 100vw);
+    background-position: center center;
+}
+
+nav {
+    width: 100%;
+    position: fixed;
+    height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "-apple-system", BlinkMacSystemFont, "-webkit-system-font", "Malgun Gothic", "Segoe UI", "Helvetica Neue", Helvetica, sans-serif;    
+    font-optical-sizing: auto;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    background-color: rgba(0, 0, 0, 0.815);
+    line-height: 1.33077;
+    z-index: 20;
+}
+.last{
+    padding: .3%;
+    margin-top: 1%;
+    color: rgba(225, 225, 225, .64);
+    font-size: .7rem;
+    line-height: .8;
+    font-weight: 400;
+    font-family: "-apple-system", BlinkMacSystemFont, "-webkit-system-font", "Malgun Gothic", "Segoe UI", "Helvetica Neue", Helvetica, sans-serif;
+    /* display: flex;
+    text-align: center;
+    justify-content: left;
+    align-items: center;
+    width: 100%;
+    margin-left: 40px; */
+}
+.lastelement{
+    display: flex;
+    font-family: "-apple-system", BlinkMacSystemFont, "-webkit-system-font", "Malgun Gothic", "Segoe UI", "Helvetica Neue", Helvetica, sans-serif;
+    justify-content: left;
+    flex-direction: column;
+    align-items: left;
+    /* text-align: center; */
+    width: 100%;
+    margin-left: 40px;
+    margin-top: 5px;
+    font-weight: 400;
+    font-size: .7rem;
+    line-height: 1.19;
+}
+#opacity{
+    color: rgba(225, 225, 225, .64);
+}
+.span{
+    gap: 1%;
+    padding: .3%;
+    display: flex;
+    font-family: "-apple-system", BlinkMacSystemFont, "-webkit-system-font", "Malgun Gothic", "Segoe UI", "Helvetica Neue", Helvetica, sans-serif;
+}
+.sideelement{
+    display: flex;
+    justify-content: right;
+    gap: 10%;
+    color: white;
+    width: auto;
+    margin: 1%;
+    padding: 1%;
+    /* gap: .5%; */
+    padding: 5px;
+    box-sizing: border-box;
+    align-items: center;
+    text-align: center;
+    /* border: 2px solid red; */
+}
+.sideelement:nth-child(2){
+    color: rgba(225, 225, 225, .64);
+
+}
+.endfooter{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+}
+.right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-right: 5%;
+    gap: 12px;
+}
+
+.right img {
+    width: 16px;
+    filter: invert(1);
+}
+
+.centre {
+    font-size: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 900;
+    gap: 2vw;
+    justify-content: center;
+    align-items: centre;
+    text-align: center;
+    margin-right: 22vw;
+}
+
+.right input {
+    background-color: black;
+    border: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 5px;
+    color: white;
+}
+.lastsection{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    background-color: #0a84ff;
+    font-family: "-apple-system", BlinkMacSystemFont, "-webkit-system-font", "Malgun Gothic", "Segoe UI", "Helvetica Neue", Helvetica, sans-serif;
+}
+.leftlast:first-child{
+    font-size: 17px;
+    line-height: 1.29412;
+    font-weight: 700;
+    letter-spacing: 0;
+    margin: 1%;
+}
+.rightlast{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.none{
+    margin-top: 5px;
+    margin: 5px;
+    opacity: .6;
+    max-width: 245px;
+    text-align: center;
+    font-weight: 400;
+    font-size: .8rem;
+    line-height: 1.19;
+}
+.button3 button{
+    height: 32px;
+    min-width: 125px;
+    max-width: 245px;
+    border-radius: 4px;
+    padding: 0 12px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #fff;
+    color: var(--systemPrimary-onLight);
+    border: none;
+    box-shadow: rgba(0,0,0,.06) 0 0 20px;
+    font-size: 13px;
+    color: black;
+    font-weight: 700;
+    font-family: "-apple-system", BlinkMacSystemFont, "-webkit-system-font", "Malgun Gothic", "Segoe UI", "Helvetica Neue", Helvetica, sans-serif;
+}
+.leftlast{
+    display: flex;
+    flex-direction: column;
+}
+.leftlast a{
+    cursor: pointer;
+    text-decoration: underline;
+    display: inline-block;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+}
+#ok{
+    display: inline-block;
+    font-size: 13px;
+    line-height: 1.23077;
+    font-weight: 400;
+    letter-spacing: 0;
+    color: rgba(225, 225, 225, .64);
+}
+.input {
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 5px;
+    border: 1px solid white;
+    border-radius: 5px;
+    display: flex;
+    width: 180px;
+    height: 28px;
+    font-size: 15px;
+    line-height: 1.33338;
+    font-weight: 400;
+    background-color: black;
+}
+
+.button button {
+    box-shadow: #0a84ff;
+    gap: 5px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0a84ff;
+    color: white;
+    height: 28px;
+    border-radius: 6px;
+    padding-left: 12px;
+    padding-right: 12px;
+    font-family: "-apple-system", BlinkMacSystemFont, "-webkit-system-font", "Malgun Gothic", "Segoe UI", "Helvetica Neue", Helvetica, sans-serif;    z-index: 1;
+    font-size: 13px;
+    line-height: 1.30772;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.box {
+    height: 100%;
+    position: relative;
+    top: 0%;
+    width: 100%;
+    /* opacity: .20;
+    background-color: black; */
+}
+
+.box2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    position: absolute;
+    top: 7%;
+    width: 100%;
+    padding: 20px;
+    margin: 10px;
+}
+
+.logo img {
+    height: 40px;
+    padding-left: 40px;
+    padding-top: 40px;
+    position: relative;
+}
+
+.backgroundcontent {
+    position: relative;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    /* border: 2px solid yellowgreen; */
+    gap: 4px;
+    /* position: sticky; */
+    font-family: "-apple-system", BlinkMacSystemFont, "-webkit-system-font", "Malgun Gothic", "Segoe UI", "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.backgroundcontent>span {
+    position: relative;
+    display: inline-block;
+    width: 18vw;
+    font-size: 15px;
+    line-height: 1.33338;
+    font-weight: 400;
+    letter-spacing: 0;
+}
+
+span>h1 {
+    position: relative;
+    display: inline-block;
+    width: 19vw;
+    font-size: 29px;
+}
+
+.button {
+    position: relative;
+    background-color: transparent;
+}
+
+.button2 button {
+    position: relative;
+    width: 87%;
+    /* box-sizing: border-box; */
+    border-radius: 6px;
+    border: none;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2%;
+    font-size: 15px;
+    line-height: 1.33338;
+    font-weight: 600;
+}
+
+.backgroundcontent span:nth-child(4) {
+    display: flex;
+    text-align: center;
+    width: 15%;
+    height: 4vh;
+    align-items: center;
+    margin-left: 7px;
+    color: rgba(225, 225, 225, .64);
+
+    font-weight: 400;
+}
+
+.section1 {
+    display: flex;
+    /* width: 100%; */
+    /* width: 100vw; */
+    box-sizing: border-box;
+    gap: 5px;
+    margin-left: 2%;
+    margin-bottom: 2%;
+    cursor: pointer;
+}
+
+.section1:hover {
+    width: 101%;
+    transition: all .8s ease-out;
+}
+
+.line {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+section>h2 {
+    height: 5vh;
+    font-size: 18px;
+    font-family: "-apple-system", BlinkMacSystemFont, "-webkit-system-font", "Malgun Gothic", "Segoe UI", "Helvetica Neue", Helvetica, sans-serif;    margin-left: 2%;
+    margin-top: 1%;
+}
+
+.break {
+    width: 95vw;
+    height: 1px;
+    background-color: gray;
+    opacity: .74;
+}
+
+.slides img {
+    box-shadow: 0px 2px 8px black;
+    height: auto;
+    /* width: 273px; */
+    border-radius: 14px;
+    width: 95%;
+    /* transition: all .1s ease-out; */
+}
+
+.slides {
+    /* transition: all .1s ease-in-out; */
+    width: 95%;
+    /* border: 2px solid orange; */
+    border-radius: 14px;
+}
+
+.slides img:hover {
+    /* width: 100%;
+    z-index: 100;
+    height: auto; */
+    opacity: .64;
+}
+
+/* .slides:hover{
+    width: 100%;
+    opacity: .64;
+    z-index: 100;
+    height: auto;
+    box-shadow: 15px 10px 12px black;
+} */
+.sectionalagbackground img {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    min-width: auto;
+    height: 100%;
+    min-height: 362px;
+    background-position: center center;
+}
+
+.sectionalag {
+    width: 100%;
+    height: 75%;
+    /* min-height: 362px; */
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: "-apple-system", BlinkMacSystemFont, "-webkit-system-font", "Malgun Gothic", "Segoe UI", "Helvetica Neue", Helvetica, sans-serif;    /* border: 2px solid red; */
+    font-family: "-apple-system", BlinkMacSystemFont, "-webkit-system-font", "Malgun Gothic", "Segoe UI", "Helvetica Neue", Helvetica, sans-serif;}
+
+.bind {
+    display: inline-block;
+    /* border: 2px solid red; */
+    margin-top: 1px;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 1.65;
+    text-align: left;
+    cursor: pointer;
+    font-family: "-apple-system", BlinkMacSystemFont, "-webkit-system-font", "Malgun Gothic", "Segoe UI", "Helvetica Neue", Helvetica, sans-serif;    font-optical-sizing: auto;
+    font-variation-settings:
+        "wdth" 100;
+    width: 65px;
+}
+
+.section2 .slides {
+    height: 195px;
+}
+
+.sec2data {
+    height: auto;
+    display: inline-block;
+    color: rgba(225, 225, 225, .64);
+    /* border: 2px solid blue; */
+    font-size: 55px;
+    cursor: pointer;
+    text-align: start;
+    font-family: "-apple-system", BlinkMacSystemFont, "-webkit-system-font", "Malgun Gothic", "Segoe UI", "Helvetica Neue", Helvetica, sans-serif;    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.nextline {
+    color: rgba(225, 225, 225, .64);
+    font-size: 12px;
+}
+
+#overflow {
+    /* border: 2px solid white; */
+    width: 172px;
+    font-size: 12px;
+}
+
+#overflow2 {
+    /* border: 2px solid white; */
+    width: 172px;
+    font-size: 17px;
+}
+
+#overflow4 {
+    width: 272px;
+}
+
+.nextline2 {
+    width: 100px;
+}
+
+.seasonpass {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    align-items: center;
+    background-color: black;
+    min-height: 120px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    min-width: 120px;
+    flex-basis: 50%;
+    box-sizing: border-box;
+    font-family: "-apple-system", BlinkMacSystemFont, "-webkit-system-font", "Malgun Gothic", "Segoe UI", "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.uldata {
+    display: flex;
+    justify-content: space-between;
+    /* margin-right: 40px; */
+}
+
+.uldata li {
+    list-style: none;
+    margin: 2px;
+    padding: 2px;
+
+}
+
+.seasonlogo img {
+    filter: invert(1);
+    width: 120px;
+    /* margin-left: 40px; */
+}
+
+.bindbutton button {
+    width: 180%;
+    /* box-sizing: border-box; */
+    border-radius: 6px;
+    border: none;
+    height: 28px;
+    /* display: flex; */
+    /* justify-content: center;
+    align-items: center; */
+    text-align: center;
+    padding: 2%;
+    font-size: 14px;
+    line-height: 1.33338;
+    font-weight: 500;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    /* margin: 10; */
+    transition: all .4s ease-in-out;
+}
+
+.bindbutton button:hover {
+    width: 200%;
+    background-color: #0a84ff;
+    font-size: 18px;
+    height: 48px;
+}
+
+.bindbutton>div {
+    text-align: center;
+    font-weight: 400;
+    color: rgba(225, 225, 225, .64);
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.bindbutton {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40px;
+}
+
+.whitefooter {
+    background-color: white;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    text-align: center;
+    font-family: "-apple-system", BlinkMacSystemFont, "-webkit-system-font", "Malgun Gothic", "Segoe UI", "Helvetica Neue", Helvetica, sans-serif;    font-optical-sizing: auto;
+}
+
+.footerbox1 img {
+    filter: invert(1);
+    height: 50px;
+    margin-top: 40px;
+}
+
+.footerbox1 h1 {
+    font-size: 60px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    line-height: 1.18;
+}
+.footerbox1>p{
+    font-size: 1.05rem;
+    font-weight: 450;
+    line-height: 1.23;
+    text-align: center;
+}
+.footerbox2{
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.footerbox3>h3{
+    font-size: 34px;
+}
+.footerbox3 a{
+    display: block;
+    margin-bottom: 25px;
+    font-weight: 600;
+    color: #0a84ff;
+    text-decoration: none;
+    font-size: 1.17rem;
+    transition: all .5s ease-in;
+    line-height: 1.23;
+    margin-top: 4%;
+    margin-bottom: 8%;
+}
+.footerbox3 a:hover{
+    font-family: "-apple-system", BlinkMacSystemFont, "-webkit-system-font", "Malgun Gothic", "Segoe UI", "Helvetica Neue", Helvetica, sans-serif;    color: rgb(0, 200, 255);
+    text-decoration: underline;
+    font-size: 1.7rem;
+}
+.footerbox4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footerbox4 img{
+    width: 80%;
+}
+.footerbox5{
+    margin-top: 10px;
+}
+.q{
+    display: flex;
+    width: 55vw;
+    /* height: 7vh; */
+    /* border: 2px solid white; */
+    padding: 1.5rem;
+    justify-content: space-between;
+    font-size: 23px;
+    font-family: "-apple-system", BlinkMacSystemFont, "-webkit-system-font", "Malgun Gothic", "Segoe UI", "Helvetica Neue", Helvetica, sans-serif;    /* justify-content: center; */
+    cursor: pointer;
+    align-items: center;
+}
+.footerbox5 h1{
+    font-size: 42px;
+    line-height: 48px;
+    margin-top: 30px;
+    width: 100%;
+    margin-bottom: 10px;
+}
